@@ -32,6 +32,10 @@
 #logo {
     float: left;
 }
-#home {
-
+#gallery {
+    display: flex;
+    gap: 10px;
+    justifyContent: center;
+    margin-top: 8%;
+    maxWidth: 80%;
 }

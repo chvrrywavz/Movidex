@@ -22,10 +22,8 @@ export default function Searcher() {
                 query: searchKey,
             },
         });
-
         setMovies(results);
         setMovie(results[0]);
-
     }
 
     const searchMovies = (e) => {
