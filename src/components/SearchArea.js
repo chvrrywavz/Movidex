@@ -1,6 +1,4 @@
 import React from 'react';
-import { AST_PropAcess } from 'terser';
-import {TextField} from "@mui/material";
 
 const SearchArea = (props) => {
     return (
