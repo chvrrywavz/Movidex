@@ -1,8 +1,7 @@
 import React, {useEffect} from 'react'
-import {TextField} from "@mui/material";
+import {createTheme, TextField} from "@mui/material";
 import './others/Style.css';
 import axios from "axios";
-
 
 
 export default function Home() {
@@ -13,7 +12,7 @@ export default function Home() {
 
     const [movies, setMovies] = React.useState([]);
     const [searchKey, setSearchKey] = React.useState('');
-    const [movie, setMovie] = React.useState({ title: "cargando pelis"});
+    const [movie, setMovie] = React.useState();
 
     const fetchMovies = async (searchKey) => {
 
@@ -47,20 +46,27 @@ export default function Home() {
             <div id="searcher">
                 <TextField id="filledSearch"
                            label="Buscar"
-                           variant="filled"
-                           fullWidth={true}
-                           color="secondary"/>
+                           variant="outlined"
+                           fullWidth={true}/>
             </div>
             <div id="titleBox">
                 <h3 id="title">Bienvenido a</h3>
                 <h2 id="title2">Movidex</h2>
             </div>
+            <div id="movieList">
+                test
+            </div>
             <div  id="gallery">
             {movies.map((movie) => (
                 <div key={movie.id}>
-                    <img src={`${URL_IMAGE + movie.poster_path}`} alt= "" height={200} width={150}/>
+                    <img src={`${URL_IMAGE + movie.poster_path}`} height={200} width={150}/>
             </div>
             ))}
+            </div>
+            <div id="footer">
+                <footer id="footerLetters">
+                    Derecho reservado para los papus@ :v
+                </footer>
             </div>
         </div>
     );

@@ -18,6 +18,9 @@ return (
             <Route path="/create">
                 <Create />
             </Route>
+            <Route path="/searcher">
+                <Searcher />
+            </Route>
         </Switch>
     </Router>
     );
