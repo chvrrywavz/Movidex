@@ -5,7 +5,6 @@ import {Container} from "@mui/material";
 export default function Searcher() {
     const API_KEY = "101aa8f223c7bd2a3b7caf34cc1de3e2";
     const API_URL = "https://api.themoviedb.org/3";
-    const IMAGE_PATH = 'https://image.tmdb.org/t/p/original';
     const URL_IMAGE = 'https://image.tmdb.org/t/p/original';
 
     const [movies, setMovies] = React.useState([]);
