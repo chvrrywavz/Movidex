@@ -38,10 +38,12 @@ export default function Home() {
         fetchMovies();
     },[])
 
+    const bestMovies = movies.slice(0,6);
+
     return (
         <div id="home">
             <figure id="logo">
-                <img src="assets/logo/movidexLogo.png" alt="Movidex Logo" width="150" height="150" />
+                <img id="logoImage" src="assets/logo/movidexLogo.png"/>
             </figure>
             <div id="searcher">
                 <TextField id="filledSearch"
@@ -54,18 +56,19 @@ export default function Home() {
                 <h2 id="title2">Movidex</h2>
             </div>
             <div id="movieList">
-                test
+                Películas
             </div>
+            <div id="movieList2">MÁS POPULARES</div>
             <div  id="gallery">
-            {movies.map((movie) => (
+            {bestMovies.map((movie) => (
                 <div key={movie.id}>
-                    <img src={`${URL_IMAGE + movie.poster_path}`} height={200} width={150}/>
+                    <img id="galleryImage" src={`${URL_IMAGE + movie.poster_path}`} height={200} width={150}/>
             </div>
             ))}
             </div>
             <div id="footer">
                 <footer id="footerLetters">
-                    Derecho reservado para los papus@ :v
+                    Derecho reservado para los papus@ copyrigghhtt
                 </footer>
             </div>
         </div>

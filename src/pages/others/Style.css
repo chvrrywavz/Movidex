@@ -1,17 +1,18 @@
 #searcher {
     margin-right: 40%;
     margin-left: 22%;
-    padding: 70px;
+    margin-top: 0%;
+    padding: 5%;
     text-align: center;
     width: 50%;
 }
 #titleBox {
     margin-top: -5%;
-    float: right;
-    margin-right: 46%;
+    text-align: center;
 }
 #title {
     background: linear-gradient(90deg,#8A2387,#F27121);
+    width: auto;
     -webkit-background-clip: text;
     color: transparent;
     font-family: "League Spartan", sans-serif;
@@ -31,14 +32,25 @@
     text-align: center;
 }
 #logo {
+    margin-top: 2%;
+    margin-left: 3%;
     float: left;
+}
+#logoImage {
+    width: 30%;
+    height: 30%;
 }
 #gallery {
     display: flex;
-    gap: 10px;
     justifyContent: center;
-    margin-top: 8%;
+    gap: 10px;
+    margin-top: 1%;
+    margin-left: 20%;
     maxWidth: 80%;
+
+}
+#galleryImage {
+    border-radius: 8px;
 }
 #footer {
     padding: 10px;
@@ -48,7 +60,7 @@
     font-family: "Libre Baskerville", serif;
     font-weight: 400;
     color: #7e7e7e;
-    font-size: 15px;
+    font-size: 10px;
 }
 #filledSearch {
     color: white;
@@ -56,6 +68,8 @@
     border-color: #7e7e7e;
 }
 #movieList {
+    margin-top: 3%;
+    margin-left: 21%;
     background: linear-gradient(90deg,#8A2387,#F27121);
     -webkit-background-clip: text;
     color: transparent;
@@ -64,5 +78,15 @@
     font-weight: 400;
     font-style: normal;
     font-size: 25px;
-    text-align: center;
+}
+#movieList2 {
+    background: white;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-left: 21%;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-size: 30px;
+    font-style: normal;
 }
