@@ -42,10 +42,10 @@ export default function Home() {
 
     return (
         <div id="home">
-            <figure id="logo">
+            <figure id="logo" class={"top"}>
                 <img id="logoImage" src="assets/logo/movidexLogo.png"/>
             </figure>
-            <div id="searcher">
+            <div id="searcher" class={"top"}>
                 <TextField id="filledSearch"
                            label="Buscar"
                            variant="outlined"
